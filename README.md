@@ -26,7 +26,7 @@
 <p align="center">
   <a href="https://pitchsense-black.vercel.app/"><strong>Live Demo</strong></a> ·
   <a href="https://github.com/dk-khandelwal06/pitchsense"><strong>GitHub Repository</strong></a> ·
-  <a href="https://www.linkedin.com/in/daksh-khandelwal-b02748391/"><strong>Developer LinkedIn</strong></a>
+  <a href="https://www.linkedin.com/in/daksh-khandelwal-b02748391/"><strong>Developer LinkedIn</strong></a> ·
   <a href=""><strong>Demo Video</strong></a>
 </p>
 
