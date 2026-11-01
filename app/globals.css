@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Stadium Theme */
+  --bg-primary: #183D32;
+  --bg-secondary: #132F27;
+  --bg-card: #20483C;
+  --bg-card-hover: #265547;
+  --border-color: #2F5F50;
+  --text-primary: #F4F3E9;
+  --text-secondary: #DDE9D8;
+  --text-muted: #A3C2B4;
+  --accent-green: #78A96B;
+  --accent-lime: #C5ED68;
+  --accent-orange: #E69B53;
+  --pitch-grass: #1E463A;
+  --pitch-strip: #255446;
+  --pitch-clay: #C49767;
+  --score-bg: #0F261F;
+}
+
+/* Light Theme */
+.theme-light {
+  --bg-primary: #F4F3E9;
+  --bg-secondary: #EBE9DC;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F7F0;
+  --border-color: #D9D7C7;
+  --text-primary: #202823;
+  --text-secondary: #183D32;
+  --text-muted: #5E6E64;
+  --accent-green: #568749;
+  --accent-lime: #7EAB18;
+  --accent-orange: #D97E29;
+  --pitch-grass: #E2ECD8;
+  --pitch-strip: #D3E2C6;
+  --pitch-clay: #D9B489;
+  --score-bg: #E4E2D3;
+}
+
+/* Stadium Theme (Explicit class) */
+.theme-stadium {
+  --bg-primary: #183D32;
+  --bg-secondary: #132F27;
+  --bg-card: #20483C;
+  --bg-card-hover: #265547;
+  --border-color: #2F5F50;
+  --text-primary: #F4F3E9;
+  --text-secondary: #DDE9D8;
+  --text-muted: #A3C2B4;
+  --accent-green: #78A96B;
+  --accent-lime: #C5ED68;
+  --accent-orange: #E69B53;
+  --pitch-grass: #1E463A;
+  --pitch-strip: #255446;
+  --pitch-clay: #C49767;
+  --score-bg: #0F261F;
+}
+
+/* Dark Theme */
+.theme-dark {
+  --bg-primary: #111814;
+  --bg-secondary: #18211C;
+  --bg-card: #1F2C25;
+  --bg-card-hover: #27372F;
+  --border-color: #2A3C33;
+  --text-primary: #F0F4F1;
+  --text-secondary: #CFDDD3;
+  --text-muted: #889C91;
+  --accent-green: #78A96B;
+  --accent-lime: #C5ED68;
+  --accent-orange: #E69B53;
+  --pitch-grass: #16221B;
+  --pitch-strip: #1C2B23;
+  --pitch-clay: #9E7447;
+  --score-bg: #0B100E;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green);
+}
+
+/* Tabular numerals for sports scores and odds */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
